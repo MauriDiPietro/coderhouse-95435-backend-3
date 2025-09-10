@@ -1,0 +1,14 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - duration: 30
+      arrivalRate: 40
+scenarios:
+  - name: "test de carga servidor"
+    flow:
+      - get: 
+          url: "/"
+      - get:
+          url: "/calculo"
+
+# artillery run test.yml -o report.json

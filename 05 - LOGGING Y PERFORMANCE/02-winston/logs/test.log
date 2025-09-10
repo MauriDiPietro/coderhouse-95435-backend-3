@@ -1,0 +1,8 @@
+{"level":"warn","message":"logger winston"}
+{"level":"error","message":"logger winston"}
+{"level":"warn","message":"logger winston"}
+{"level":"error","message":"logger winston"}
+2025-09-10 08:40:01 | [33mwarn[39m | logger winston
+2025-09-10 08:40:01 | [31merror[39m | logger winston
+[2025-09-10 08:40:31] | [33mwarn[39m | logger winston
+[2025-09-10 08:40:31] | [31merror[39m | logger winston

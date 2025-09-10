@@ -1,0 +1,24 @@
+[2025-09-10T07:56:39.615] [DEBUG] default - Got cheese.
+[2025-09-10T07:56:39.621] [INFO] default - Cheese is Comté.
+[2025-09-10T07:56:39.621] [WARN] default - Cheese is quite smelly.
+[2025-09-10T07:56:39.621] [ERROR] default - Cheese is too ripe!
+[2025-09-10T07:56:39.621] [FATAL] default - Cheese was breeding ground for listeria.
+[2025-09-10T07:57:46.939] [DEBUG] default - Got cheese.
+[2025-09-10T07:57:46.943] [INFO] default - Cheese is Comté.
+[2025-09-10T07:57:46.943] [WARN] default - Cheese is quite smelly.
+[2025-09-10T07:57:46.943] [ERROR] default - Error registrando usuario - Email invalido
+[2025-09-10T07:57:46.943] [FATAL] default - Cheese was breeding ground for listeria.
+[2025-09-10T07:59:24.481] [DEBUG] default - Got cheese.
+[2025-09-10T07:59:24.485] [INFO] default - Cheese is Comté.
+[2025-09-10T07:59:24.485] [WARN] default - Cheese is quite smelly.
+[2025-09-10T07:59:24.488] [ERROR] default - Error registrando usuario - Email invalido
+[2025-09-10T07:59:24.488] [FATAL] default - Cheese was breeding ground for listeria.
+[2025-09-10T08:01:32.234] [WARN] myLogger - Cheese is quite smelly.
+[2025-09-10T08:01:32.239] [ERROR] myLogger - Error registrando usuario - Email invalido
+[2025-09-10T08:01:32.239] [FATAL] myLogger - Cheese was breeding ground for listeria.
+[2025-09-10T08:05:14.699] [WARN] prod - Cheese is quite smelly.
+[2025-09-10T08:05:14.703] [ERROR] prod - Error registrando usuario - Email invalido
+[2025-09-10T08:05:14.703] [FATAL] prod - Cheese was breeding ground for listeria.
+[2025-09-10T08:06:51.246] [WARN] prod - Cheese is quite smelly.
+[2025-09-10T08:06:51.251] [ERROR] prod - Error registrando usuario - Email invalido
+[2025-09-10T08:06:51.251] [FATAL] prod - Cheese was breeding ground for listeria.
