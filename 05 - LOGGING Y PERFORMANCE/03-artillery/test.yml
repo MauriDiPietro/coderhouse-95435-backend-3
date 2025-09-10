@@ -12,3 +12,5 @@ scenarios:
           url: "/calculo"
 
 # artillery run test.yml -o report.json
+
+# artillery run test.yml --record --key API_KEY
