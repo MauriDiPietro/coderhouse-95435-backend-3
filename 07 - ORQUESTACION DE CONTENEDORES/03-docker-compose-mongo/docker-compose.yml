@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  mongo-docker:
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    volumes:
+      - "/d/DOCKER/MONGO/coder-95435:/data/db"
+
+# mongodump --uri="mongodb://localhost:27018/coderhouse" --out=./
+# mongorestore --uri="mongodb://localhost:27018/coderhouse" /d/DOCKER/MONGO/coder-95435
