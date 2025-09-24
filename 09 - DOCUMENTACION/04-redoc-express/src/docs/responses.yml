@@ -1,0 +1,70 @@
+components:
+  schema:
+    Products:
+      ProductResponse:
+        type: object
+        properties:
+          _id:
+            type: string
+            description: Id del producto
+          name:
+            type: string
+            description: Nombre del producto
+          price:
+            type: number
+            description: Precio del producto
+          description:
+            type: string
+            description: Descripción del producto
+          stock:
+            type: number
+            description: Stock del producto
+          active:
+            type: boolean
+            description: Indica si el producto está activo
+        example:
+          _id: 64964646sdfsdfsdf654s64
+          name: Café
+          price: 50000
+          stock: 150
+          description: Este es un café de alta calidad.
+          active: true  
+      ProductList:
+        type: array
+        items:
+          $ref: '#/components/schema/Products/ProductResponse'
+      Error:
+        type: object
+        properties:
+          status:
+            type: number
+            description: Código de estado de la respuesta
+          message:
+            type: string
+            description: Mensaje de error
+        example:
+          message: Internal Server Error
+          status: 500
+      NotFound:
+        type: object  
+        properties:
+          status:
+            type: number
+            description: Código de estado de la respuesta
+          message: 
+            type: string
+        example:
+          message: Product not found / No products found
+          status: 404
+      BadRequest:
+        type: object  
+        properties:
+          status:
+            type: number
+            description: Código de estado de la respuesta
+          message: 
+            type: string
+        example:
+          message: Error creating product
+          status: 400
+      

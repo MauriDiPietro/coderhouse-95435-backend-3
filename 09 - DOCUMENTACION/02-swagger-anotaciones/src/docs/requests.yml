@@ -1,0 +1,28 @@
+components:
+  parameters:
+    schemas:
+      ProductInput:
+        type: object
+        required: 
+          - name
+          - description
+          - stock
+          - price
+        properties:
+          name:
+            type: string
+            description: Nombre del producto
+          price:
+            type: number
+            description: Precio del producto
+          description:
+            type: string
+            description: Descripción del producto
+          stock:
+            type: number
+            description: Stock del producto
+        example:
+          name: Café
+          price: 50000
+          stock: 150
+          description: Este es un café de alta calidad.
