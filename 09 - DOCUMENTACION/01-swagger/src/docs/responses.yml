@@ -4,6 +4,23 @@ components:
       ProductResponse:
         type: object
         properties:
+          status:
+            type: number
+            description: Código de estado de la respuesta
+          data:
+            $ref: '#/components/schema/Products/Product'
+        example:
+          status: 201
+          data:
+            _id: 64964646sdfsdfsdf654s64
+            name: Café
+            price: 50000
+            stock: 150
+            description: Este es un café de alta calidad.
+            active: true
+      Product:
+        type: object
+        properties:
           _id:
             type: string
             description: Id del producto
@@ -28,11 +45,11 @@ components:
           price: 50000
           stock: 150
           description: Este es un café de alta calidad.
-          active: true  
+          active: true
       ProductList:
         type: array
         items:
-          $ref: '#/components/schema/Products/ProductResponse'
+          $ref: '#/components/schema/Products/Product'
       Error:
         type: object
         properties:
