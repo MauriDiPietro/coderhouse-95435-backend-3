@@ -1,0 +1,32 @@
+{
+  "name": "01-arquitectura-capas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:mongo": "node --env-file=.env src/server.js mongo",
+    "start:fs": "node --env-file=.env src/server.js fs",
+    "test:chai": "mocha --timeout 20000 src/test/product.dao.chai.test.js",
+    "test:assert": "mocha --timeout 20000 src/test/product.dao.assert.test.js",
+    "test:node": "node src/test/test.js",
+    "test:api": "set NODE_OPTIONS=--experimental-vm-modules && npx jest ./src/test/api.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "chai": "^6.2.0",
+    "jest": "^30.2.0",
+    "mocha": "^11.7.2",
+    "supertest": "^7.1.4"
+  }
+}
