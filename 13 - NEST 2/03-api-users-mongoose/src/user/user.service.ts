@@ -40,9 +40,7 @@ export class UserService {
   }
 
   async findByEmail(email: string): Promise<UserDocument | null> {
-    const user = await this.UserModel.findOne({ email });
-    if (!user) throw new NotFoundException('Error al obtener el usuario');
-    return user;
+    return await this.UserModel.findOne({ email });
   }
 
   generateToken(user: UserDocument): string {
